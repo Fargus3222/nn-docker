@@ -1,0 +1,7 @@
+version: '3.9'
+
+services:
+  nng:
+    image: fargus3222/nnd:latest
+    volumes:
+      - ./nexus:$HOME/.nexus/
