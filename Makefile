@@ -12,3 +12,7 @@ init:
 
 down:
 		docker compose down
+
+
+cleanup:
+		docker system prune -a -f
