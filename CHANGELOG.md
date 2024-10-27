@@ -1,6 +1,9 @@
 # Changelog
 
 
+## [1.3.1-dev] - 2024-10-26
+### Add
+- Hot fix
 ## [1.3.0-dev] - 2024-10-26
 ### Add
 - Minimalization of docker image to 279 MB

@@ -1,4 +1,4 @@
-FROM rust:slim AS build
+FROM rust AS build
 
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -37,7 +37,7 @@ RUN chmod 755 /build/run.sh && \
 RUN useradd -m -s /bin/bash nexus && \
     chown -R nexus:nexus /build
 
-FROM rust:slim
+FROM rust
 
 WORKDIR /app
 
