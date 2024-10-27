@@ -19,7 +19,7 @@ jobs:
       - name: cd into repo
         uses: actions/checkout@v2
       - name: Build service
-        run: make build
+        run: make docker_build
 
 
   Push:
