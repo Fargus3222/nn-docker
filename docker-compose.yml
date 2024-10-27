@@ -3,5 +3,6 @@ version: '3.9'
 services:
   nnd:
     image: fargus3222/nnd:latest
+    restart: always
     volumes:
       - ./nexus:$HOME/.nexus/

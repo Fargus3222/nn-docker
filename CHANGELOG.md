@@ -4,6 +4,7 @@
 ## [1.3.0-dev] - 2024-10-26
 ### Add
 - Minimalization of docker image to 279 MB
+- Security update of docker image 
 
 ## [1.2.2-dev] - 2024-10-26
 ### Add
