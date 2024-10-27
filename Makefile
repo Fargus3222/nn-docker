@@ -8,7 +8,7 @@ docker_push:
 		
 
 init:
-		docker compose init -d --build
+		docker compose up -d --build
 
 down:
 		docker compose down
