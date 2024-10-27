@@ -38,3 +38,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Up service
         run: make init
+
+
+#run jobs
