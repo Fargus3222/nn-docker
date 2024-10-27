@@ -14,6 +14,7 @@ jobs:
 
   Build:
     runs-on: nnd-node
+    needs: [Down]
     steps:
       - name: cd into repo
         uses: actions/checkout@v2
@@ -22,6 +23,7 @@ jobs:
 
 
   Push:
+    needs: [Down, Build]
     runs-on: nnd-node
     steps:
       - name: cd into repo
