@@ -38,7 +38,7 @@ RUN cd ./network-api/clients/cli && cargo build --release --bin prover
 RUN useradd -m -s /bin/bash nexus && \
     chown -R nexus:nexus /build
 
-FROM rust
+FROM rust:slim
 
 WORKDIR /app
 
