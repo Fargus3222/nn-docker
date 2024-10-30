@@ -1,3 +1,3 @@
 #!/bin/sh
 
-(cd ./network-api/clients/cli && cargo run --release --bin prover -- beta.orchestrator.nexus.xyz)
+./network-api/clients/cli/target/release/prover beta.orchestrator.nexus.xyz

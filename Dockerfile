@@ -33,6 +33,7 @@ RUN chmod 755 /build/run.sh && \
     mkdir -p $HOME/.nexus/ && \
     touch $HOME/.nexus/prover-id
 
+RUN cd ./network-api/clients/cli && cargo build --release --bin prover
 
 RUN useradd -m -s /bin/bash nexus && \
     chown -R nexus:nexus /build
@@ -43,9 +44,7 @@ WORKDIR /app
 
 COPY --from=build /build /app
 
-RUN useradd -m -s /bin/bash nexus
-
-RUN chmod 755 /app/run.sh
+RUN useradd -m -s /bin/bash nexus && chmod 755 /app/run.sh
 
 USER nexus
 

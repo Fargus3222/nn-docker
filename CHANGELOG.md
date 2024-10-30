@@ -1,9 +1,15 @@
 # Changelog
 
 
+## [1.3.2-dev] - 2024-10-26
+### Fix
+- The situation with compilation on startup has been reworked.
+
+
 ## [1.3.1-dev] - 2024-10-26
-### Add
+### Fix
 - Hot fix
+
 ## [1.3.0-dev] - 2024-10-26
 ### Add
 - Minimalization of docker image to 279 MB
